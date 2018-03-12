@@ -17,7 +17,8 @@ Defining a model
 Get Model object from ```sequelize.define()```
 
  ``` 
-// create a tables Model.sync() PersonModel.sync()
+// create a tables Model.sync() 
+PersonModel.sync()
      .then((val)=>{
          console.log(val);
      },(err)=>{
