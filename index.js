@@ -42,3 +42,12 @@ const PersonModel = sequelize.define("person",{
 // },(err)=>{
 //     console.log(err);
 // });
+
+// findById on model 
+// PersonModel.findById(1)
+//     .then((person)=>{
+//         console.log(`your id : ${person.get('id')}, your name : ${person.getDataValue('name')}`);
+//     })
+//     .catch((err)=>{
+//         console.log(err);
+//     })
