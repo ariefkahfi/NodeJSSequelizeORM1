@@ -60,3 +60,20 @@ const PersonModel = sequelize.define("person",{
 //     .catch((err)=>{
 //         console.log(err);
 //     })
+
+// query replacements
+sequelize.query("select * from person where person_id = ?",{
+    replacements:["1"]
+    }).then(()=>{
+        return sequelize.query("select * from person where person_id = :p_id",{
+            replacements:{
+                p_id: 2
+            }
+        })
+    }).then((val)=>{
+        console.log(val);
+    }).catch(err=>{
+        console.log(err);
+    })
+
+
