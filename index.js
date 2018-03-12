@@ -51,3 +51,12 @@ const PersonModel = sequelize.define("person",{
 //     .catch((err)=>{
 //         console.log(err);
 //     })
+
+// raw query
+// sequelize.query("select * from person")
+//     .then((val)=>{
+//         console.log(val);
+//     })
+//     .catch((err)=>{
+//         console.log(err);
+//     })
